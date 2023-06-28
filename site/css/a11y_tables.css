@@ -1,0 +1,120 @@
+.table-a11y {
+  width: 100%;
+  text-transform: capitalize;
+  text-align: left;
+
+}
+.table-a11y caption {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+.table-a11y thead, .table-a11y tbody, .table-a11y tfoot {
+  width: 100%;
+}
+.table-a11y tr {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.table-a11y tr:nth-child(even) {
+  background: rgba(0, 0, 0, 0.05);
+}
+.table-a11y tr:nth-child(odd) {
+  background: #FFF;
+}
+
+.table-a11y thead tr {
+  color:#fff;
+  background: #2D5D6C !important;
+  box-sizing: border-box;
+}
+@media (min-width: 768px) {
+  .table-a11y tr {
+    flex-direction: row;
+ }
+}
+
+/* THIS CSS IS NOT REQUIRED TO GIVE ACCESSIBILITY+RESPONSIVENESS TO A TABLE */
+/* ONLY FOR DEMO PURPOSE */
+.table-design {
+  margin: 3rem 0;
+ /* TABLE HEADER STYLING */
+ /* DISPLAY EACH ROW AS A CARD */
+ /* INDIVIDUAL CELL HEADING STYLES */
+}
+.table-design thead {
+  background: #2D5D6C !important;
+  color: #fff;
+}
+.table-design thead th {
+  padding: 15px 10px;
+  text-align: left;
+}
+.table-design tbody tr {
+  background: #fff;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 15px;
+}
+.table-design tbody th {
+  font-weight: normal;
+}
+.table-design tbody th, .table-design tbody td {
+  padding: 12px 10px;
+}
+@media (max-width: 767px) {
+  .table-design tbody th, .table-design tbody td {
+    display: flex;
+ }
+
+ .table-a11y td:nth-child(even) {
+   background: rgba(0, 0, 0, 0.05);
+ }
+ .table-a11y td:nth-child(odd) {
+   background: #FFF;
+ }
+}
+.table-design tbody .col-header {
+  flex: 0 0 140px;
+  width: 140px;
+  padding: 12px 10px;
+  margin: -12px 10px -12px -10px;
+  background: #2D5D6C;
+  color: #fff;
+  border: 1px solid #fff;
+}
+/* MOBILE MODE */
+@media (max-width: 767px) {
+ /* even if table headers are visually hidden, it's necessary to set row as block level to avoid weird bug on VoiceOver */
+  .table-design thead {
+    position: absolute !important;
+    clip: rect(1px, 1px, 1px, 1px);
+ }
+}
+/* TABLET MODE */
+@media (min-width: 768px) {
+  .table-design {
+    background: #fff;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+   /* ROWS MOBILE STYLING RESET & STYLING FOR TABLET */
+   /* SET CELLS WIDTH */
+   /* HIDE INVIDUAL CELL HEADING */
+ }
+  .table-design tbody tr {
+    background: none;
+    box-shadow: none;
+    margin-bottom: 0;
+ }
+  .table-design tbody tr:hover {
+    background: #e5f5fa;
+ }
+  .table-design thead th, .table-design tbody th, .table-design thead td, .table-design tbody td {
+    width: 20%;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+ }
+  .table-design tbody .col-header {
+    display: none;
+ }
+}

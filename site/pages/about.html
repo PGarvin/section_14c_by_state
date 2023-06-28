@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+       <html lang="en" dir="ltr">
+         <head>
+           <meta charset="utf-8">
+           <title>About</title>
+           <meta charset="utf-8">
+		<meta name="author" content="Patrick Garvin">
+		<meta name="keywords" content="Patrick Garvin, Section 14c, subminimum wage, people with disabilities, sheltered workshops">
+		<meta name="viewport" content="width=device-width">
+		<meta property="og:url" content="http://patrickgarvin.com/disabilityJournoResource/section14c/pages" />
+		<meta property="og:title" content="Why it's still legal to pay disabled people less than minimum wage" />
+		<meta property="og:image" content="http://patrickgarvin.com/disabilityJournoResource/section14c/assets/og_image.jpg" />
+		<meta property="og:site_name" content="Why it's still legal to pay disabled people less than minimum wage" />
+		<meta property="og:description" content="Not everyone knows about the minimum wage loophole." />
+
+           <link rel="stylesheet" href="../css/styles.css">
+           <link rel="stylesheet" href="../css/a11y_tables.css">
+
+         </head>
+         <body>
+    <a class="skip-link" href="#content">Skip to content</a>
+    <nav>
+      <ul class="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="data.html">Data</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li class="active"><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+
+
+
+<main id="content">
+<h1>About</h1>
+
+<p>This resource is meant to introduce people to the law that allows people with disabilities to be paid less than minimum wage. Specifically, this resource will introduce you to Section 14(c) of The Fair Labor Standards Act of 1938.</p>
+
+<h2>Table of contents</h2>
+<ul>
+<li>
+<a href="#how_to_use">How I expect you to use this project</a>
+</li>
+<li>
+<a href="#how_started">How this project started</a>
+</li>
+<li>
+<a href="#how_i_built">How I built this</a>
+</li>
+<li>
+<a href="#about_me">About me</a>
+</li>
+</ul>
+
+<h2 id="how_to_use">How I expect you to use this project</h2>
+<p>This resource will continue to grow with more data and more resources, so I hope you'll return. As the Department of Labor updates its data, so too will I update mine.</p>
+<p>As someone with more than 15 years of journalism experience, I created this with journalists in mind. My hope is that journalists will:</p>
+
+<ul>
+  <li>Use this a jumping-off point to dig in and learn more</li>
+  <li>Share this with colleagues and editors</li>
+  <li>Find ways to localize this to their state and/or their city</li>
+  <li>Reach out with questions</li>
+</ul>
+
+<h2 id="how_started">How this project started</h2>
+<p>This project started when I read this tweet in January 2023:</p>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Some of y’all would be shocked to know how many orgs/companies you think are great are paying disabled employees subminimum wage - which is sometimes pennies per hour.<br><br>Good news! It’s all public information.<br>Do with it what you will🫡 <a href="https://t.co/Epz2JKGEsz">https://t.co/Epz2JKGEsz</a></p>&mdash; Dom Kelly (@the_tattooedjew) <a href="https://twitter.com/the_tattooedjew/status/1614369537268350982?ref_src=twsrc%5Etfw">January 14, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>I was aware of the fact people with disabilities could be paid less than minimum wage, but I didn't know much about the details. I saw this tweet as a chance for me to educate myself on this issue.</p>
+
+<p>The more I dug into this, the more questions I had:</p>
+
+<ul>
+  <li>How exactly does this work?</li>
+  <li>How did this start?</li>
+  <li>Who supports this?</li>
+  <li>Who opposes this?</li>
+  <li>Who are the people in the middle?</li>
+</ul>
+
+<p>I leaned into my journalism background, and dug in. First, with the data.</p>
+
+<div class="backToTop"><a href="#content">Back to top</a></div>
+
+<h2 id="how_i_built">How I built this</h2>
+<p>As a coder who's always looking to grow my skillset, I wanted this to be a chance for me to flex some coding muscles. So I knew I didn't want to just manually download this Excel document and open it in Excel or Google Sheets.</p>
+
+<p>I initially wanted to write a Python script to download and clean the data. But because I have been using Node.JS at work lately, I decided to write this using Node.JS and some npm dependencies instead.</p>
+
+<p>I spent a month or two tweaking the code so that it could:</p>
+<ul>
+  <li>Check for the most recent Excel document on the Department of Labor's Section 14(c) page</li>
+  <li>Pull down the document</li>
+  <li>Begin sorting the data and calculating some numbers</li>
+  <li>Pull down the lat/lon coordinates for the locations</li>
+  <li>Generate html pages for the tables and charts</li>
+</ul>
+
+<p>As I clean up the code, I hope to share this on Github.</p>
+
+<div class="backToTop"><a href="#content">Back to top</a></div>
+
+<h2 id="about_me">About me</h2>
+<p>The short story is that I'm a former Boston Globe graphics reporter who now works as a front-end developer and a web accessibility consultant. Until recently, I also taught University of Missouri students how to make websites accessible for people with disabilities. I took the last semester off to rest and recharge.</p>
+<p>I've built two accessibility-themed Twitter bots (<a target="_blank" href="https://twitter.com/AltAwareness">Alt Text Awareness</a> and <a target="_blank" href="https://twitter.com/A11yAwareness">Accessibility Awareness</a>). Additionally, I'm certified with the International Association of Accessibility Professionals (IAAP) with a Certified Professional in Accessibility Core Competencies credential.</p>
+<p>Feel free to <a href="mailto:pgarvin@gmail.com">shoot me a message</a>!</p>
+
+<div class="backToTop"><a href="#content">Back to top</a></div>
+</main>
+<footer><p>&#169; Patrick Garvin, 2023<p></footer>
+</body>
+</html>
