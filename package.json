@@ -1,0 +1,22 @@
+{
+  "name": "section_14c_by_state",
+  "version": "1.0.0",
+  "description": "Code that sorts Excel data about Section 14c into html files for each state.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PGarvin/section_14c_by_state.git"
+  },
+  "author": "Patrick Garvin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PGarvin/section_14c_by_state/issues"
+  },
+  "homepage": "https://github.com/PGarvin/section_14c_by_state#readme",
+  "devDependencies": {
+    "xlsx": "^0.18.5"
+  }
+}
